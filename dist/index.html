@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Score Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/scaore-app-js/assets/index-CW7oRtkM.js"></script>
+  <link rel="stylesheet" crossorigin href="/scaore-app-js/assets/index-Cf86PbLn.css">
+</head>
+<body>
+    <div id="root">
+        <div style="min-height:100vh;display:grid;place-items:center;padding:24px;background:linear-gradient(135deg,#031018,#0a1e2b,#0f3044);color:#ecf7fd;font-family:'Space Grotesk',sans-serif;">
+            <div style="max-width:680px;padding:24px;border:1px solid rgba(154,203,231,0.16);border-radius:24px;background:rgba(7,20,30,0.84);box-shadow:0 24px 70px rgba(0,0,0,0.36);">
+                <h1 style="margin:0 0 12px;font-family:'Sora',sans-serif;">Loading Cricket Dashboard</h1>
+                <p style="margin:0;line-height:1.6;color:#d3e5ef;">If this page stays blank, run the app with Vite instead of opening <code>index.html</code> directly.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.CRICKET_APP_CONFIG = {
+            firebaseConfig: {
+                apiKey: "AIzaSyClEUkrLZxVYPjb_yUFgrwlzhVU-OtCQW0",
+                authDomain: "cricket-dashboard-23f1e.firebaseapp.com",
+                projectId: "cricket-dashboard-23f1e",
+                databaseURL: "https://cricket-dashboard-23f1e-default-rtdb.asia-southeast1.firebasedatabase.app",
+                storageBucket: "cricket-dashboard-23f1e.firebasestorage.app",
+                messagingSenderId: "149456600808",
+                appId: "1:149456600808:web:f6f3a42d02b972d6dad35d"
+            }
+        };
+
+        if (window.location.protocol === "file:") {
+            document.getElementById("root").innerHTML = `
+                <div style="min-height:100vh;display:grid;place-items:center;padding:24px;background:linear-gradient(135deg,#031018,#0a1e2b,#0f3044);color:#ecf7fd;font-family:'Space Grotesk',sans-serif;">
+                    <div style="max-width:760px;padding:24px;border:1px solid rgba(154,203,231,0.16);border-radius:24px;background:rgba(7,20,30,0.84);box-shadow:0 24px 70px rgba(0,0,0,0.36);">
+                        <h1 style="margin:0 0 12px;font-family:'Sora',sans-serif;">Run This App With Vite</h1>
+                        <p style="margin:0 0 12px;line-height:1.6;color:#d3e5ef;">This React version will not work by opening <code>index.html</code> directly from the file system.</p>
+                        <p style="margin:0 0 12px;line-height:1.6;color:#d3e5ef;">Start it from the project folder with:</p>
+                        <pre style="margin:0;padding:16px;border-radius:16px;background:rgba(255,255,255,0.06);overflow:auto;"><code>npm run dev</code></pre>
+                        <p style="margin:12px 0 0;line-height:1.6;color:#d3e5ef;">Then open the local URL Vite shows in the terminal.</p>
+                    </div>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>
